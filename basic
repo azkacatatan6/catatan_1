@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             width: 300,
             decoration: BoxDecoration(
               color: Colors.red,
-              borderRadius: 
+              borderRadius: BorderRadius.circular(20)
             ),
             padding: EdgeInsets.all(100),
             child:  
