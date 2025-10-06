@@ -13,18 +13,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.white10,
         body: Center(
           child: Container(
             height: 300,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Colors.grey,
               borderRadius: BorderRadius.circular(20)
             ),
             padding: EdgeInsets.all(100),
             child:  
-              Text("Halo Azka", style: TextStyle(color: Colors.white),), 
+              Text("Halo Azka", style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),), 
             
               
           ),
@@ -34,3 +34,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
