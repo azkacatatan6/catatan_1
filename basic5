@@ -1,0 +1,72 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.deepPurple[200],
+        appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
+          title: 
+          Center(child: Text("Learning Flutter Widget", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),)),
+          elevation: 5,
+          leading: Icon(Icons.menu, color: Colors.white,),
+          actions: [IconButton(onPressed: () {}, icon: Icon(Icons.logout), color: Colors.white,)],
+        ),
+
+        body: Center(
+          child: Column(
+            
+            crossAxisAlignment: CrossAxisAlignment.center,
+            // Banyak bisa center space between end dan lain lainn buat mainaxis buat crossaxis bisa center end dll. cari aja di ai buat syntaxnya apa aja
+
+            children: [
+            // 1
+            Expanded(
+              child: Container(
+                color: Colors.red,
+              ),
+              
+            ),
+          
+            // 2
+            Expanded(
+              flex: 3,
+              // jadi kalau pakai flex ukurannya akan mengikuti nilai dalam flexnya kalau gaada ya sama aja
+              child: Container(
+                color: Colors.red[400],
+              ),
+              
+            ),
+          
+            // 3
+            Expanded(
+              child: Container(
+                color: Colors.red[200],
+              ),
+              
+          
+            )
+            ],
+          
+          ),
+        )
+
+
+        
+
+      ),
+    );
+  }
+}
+
+
